@@ -1,11 +1,18 @@
+//Dependencies
 
+
+//Context
+import { QuoterProvider } from "./context/QuoterProvider" 
+
+//Components
+import AppInsurance from "./components/AppInsurance"
 
 function App() {
 
   return (
-    <>
-      <h1>APP</h1>
-    </>
+    <QuoterProvider>
+      <AppInsurance />
+    </QuoterProvider>
   )
 }
 
